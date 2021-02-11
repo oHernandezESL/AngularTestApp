@@ -1,0 +1,20 @@
+{
+  "FA": {
+    "TITLE": "Mi administrador de tareas",
+    "TASKS_APP": "Tareas app", 
+    "OTHER_ROUTE": "La otra ruta",
+    "TASKS": "TAREAS",
+    "COMPLETED_TASKS": "TAREAS COMPLETAS ",
+    "SORT": "Ordenar",
+    "WRITE_TASK": "Escrite tu tarea",
+    "ADD_TASK": "Añadir tarea",
+    "EDIT": "Editar",
+    "APPLY": "Applicar",
+    "COMPLETE_TASK": "Completar tarea",
+    "OTHER_PATH_TITLE": "En verdad no se que poner aquí, pero querias routing, y tienes rouiting :)",
+    "REACTIVEX_PLAY": "Pero ya que estas aquí, ¿por qué no jugar un poco con ReactiveX?",
+    "START_INTERVAL": "Iniciar Intervalo",
+    "STOP_INTERVAL": "Detener Intervalo",
+    "REACTIVEX_ACLARATORY_MESSAGE": "Perdón por este simple ejemplo de ReactiveX, aún estoy aprendiendo esta librería (y también es muy tarde y quiero irme a la cama...)"
+  }
+}

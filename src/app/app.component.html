@@ -1,0 +1,15 @@
+
+<div class="app">
+  <h2>{{'FA.TITLE' | translate}}</h2>
+  <label for="">
+    <select #langSelect (change)="translate.use(langSelect.value)" class="languageSelector">
+      <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{lang}}</option>
+    </select>
+  </label>
+  <nav>
+    <a routerLinkActive="activeNav" routerLink="/tasks">{{'FA.TASKS_APP' | translate}}</a> |
+    <a routerLinkActive="activeNav" routerLink="/otherPath">{{'FA.OTHER_ROUTE' | translate}}</a>
+  </nav>
+  <router-outlet></router-outlet>
+<!--   <fa-tasks class="task-list"></fa-tasks> -->
+</div>

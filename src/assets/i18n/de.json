@@ -1,0 +1,20 @@
+{
+  "FA": {
+    "TITLE": "Mein Aufgabenmanager",
+    "TASKS_APP": "Aufgaben-App", 
+    "OTHER_ROUTE": "Die andere Route",
+    "TASKS": "AUFGABEN",
+    "COMPLETED_TASKS": "ABGESCHLOSSENE AUFGABEN",
+    "SORT": "Sortieren",
+    "WRITE_TASK": "Schreiben Sie Ihre Aufgabe",
+    "ADD_TASK": "Aufgabe hinzufügen",
+    "EDIT": "Bearbeiten",
+    "APPLY": "Anwenden",
+    "COMPLETE_TASK": "Aufgabe abschließen",
+    "OTHER_PATH_TITLE": "Eigentlich weiß ich nicht, was ich hier schreiben soll, aber du wolltest Routing, also bekommst du Routing :)",
+    "REACTIVEX_PLAY": "Aber jetzt, wo Sie hier sind, warum nicht ein bisschen mit ReactiveX spielen?",
+    "START_INTERVAL": "Startintervall",
+    "STOP_INTERVAL": "Stoppintervall",
+    "REACTIVEX_ACLARATORY_MESSAGE": "Entschuldigung für dieses sehr einfache ReactiveX-Beispiel, ich fange an, diese Bibliothek zu lernen (und es ist auch sehr spät und ich möchte schlafen ...)"
+  }
+}

@@ -1,0 +1,8 @@
+<p>{{'FA.OTHER_PATH_TITLE' | translate}}</p>
+<p>{{'FA.REACTIVEX_PLAY' | translate}}</p>
+<button (click)="startSubscription()">{{'FA.START_INTERVAL' | translate}}</button>
+<ul>
+  <li *ngFor="let number of subscriptionArray">{{number}}</li>
+</ul>
+<button (click)="stopSubscription()">{{'FA.STOP_INTERVAL' | translate}}</button>
+<p *ngIf="showAclaratoryText">{{'FA.REACTIVEX_ACLARATORY_MESSAGE' | translate}}</p>

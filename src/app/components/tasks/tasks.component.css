@@ -1,0 +1,44 @@
+.task-selected{
+  background-color: blue;
+  color: white;
+}
+.push-right{
+  float:right;
+}
+.inputTasks{
+  margin: 20px;
+}
+ul{
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+}
+ul.task-list li:hover{
+  cursor: pointer;
+}
+ul li{
+  border: 1px solid blue;
+}
+ul li{
+  height: 40px;
+  padding: 10px;
+}
+ul li span {
+  width: 80%;
+  height: 100%;
+}
+ul li *{
+  display: inline-block;
+}
+ul li.list-header{
+  font-weight: bold;
+}
+ul.task-list li.list-header{
+  background-color: red;
+  color: white;
+}
+ul.completed-task-list li.list-header{
+  background-color: green;
+  color: white;
+}

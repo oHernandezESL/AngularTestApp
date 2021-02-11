@@ -1,0 +1,12 @@
+.languageSelector{
+  right: 0px;
+  top: 0;
+  position: fixed;
+}
+.activeNav{
+  background-color: blue;
+  color: white;
+}
+nav{
+  margin: 20px;
+}

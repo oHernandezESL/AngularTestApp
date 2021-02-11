@@ -1,0 +1,20 @@
+{
+  "FA": {
+    "TITLE": "My tasks manager",
+    "TASKS_APP": "Tasks app", 
+    "OTHER_ROUTE": "The other route",
+    "TASKS": "TASKS",
+    "COMPLETED_TASKS": "COMPLETED TASKS",
+    "SORT": "Sort",
+    "WRITE_TASK": "Write your task",
+    "ADD_TASK": "Add task",
+    "EDIT": "Edit",
+    "APPLY": "Apply",
+    "COMPLETE_TASK": "Complete task",
+    "OTHER_PATH_TITLE": "Actually I do not know what to write here, but you wanted routing, so you get routing :)",
+    "REACTIVEX_PLAY": "But now that you are here, why not play a bit with ReactiveX?",
+    "START_INTERVAL": "Start Interval",
+    "STOP_INTERVAL": "Stop Interval",
+    "REACTIVEX_ACLARATORY_MESSAGE": "Sorry for this very simple ReactiveX example, I am starting to learn this library (and also is very late and I want to sleep...)"
+  }
+}

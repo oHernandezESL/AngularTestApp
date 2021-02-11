@@ -1,0 +1,40 @@
+<div class="tasks-lists">
+  <form class="inputTasks" (submit)="addTask()">
+    <input type="text" name="taskInput" placeholder="{{'FA.WRITE_TASK' | translate}}" [(ngModel)]="taskInput" [disabled]="disableButtons"/>
+    <input type="submit" value="{{'FA.ADD_TASK' | translate}}" [disabled]="disableButtons"/>
+  </form>
+  <ul class="task-list">
+    <li class="list-header">
+      <span>{{'FA.TASKS' | translate}}</span>
+      <button (click)="sortTasks('tasks')" [disabled]="disableButtons">{{'FA.SORT' | translate}}</button>
+    </li>
+    <li *ngFor="let task of tasks" class="{{task.selected ? 'task-selected' : ''}}">
+      <div *ngIf="task.isEdit; then showEditInput else showValue"></div>
+      <ng-template #showEditInput>
+        <input name="editTaskInput" [(ngModel)]="editTaskInput" type="text">
+      </ng-template>
+      <ng-template #showValue>
+        <span class="content" (click)="selectTask(task.date)">{{task.value}}</span>
+      </ng-template>
+      <div *ngIf="!task.completed" class="push-right">
+        <div *ngIf="task.isEdit; then editButtons else normalButtons"></div>
+        <ng-template #normalButtons>
+          <button class="edit" (click)="editTask(task.date)" [disabled]="disableButtons">{{'FA.EDIT' | translate}}</button>
+        </ng-template>
+        <ng-template #editButtons>
+          <button class="apply" (click)="applyEditedTask()" >{{'FA.APPLY' | translate}}</button>
+        </ng-template>
+      </div>
+    </li>
+  </ul>
+  <button class="task" (click)="completeTasks()" [disabled]="disableButtons || areTasksSelected()">{{'FA.COMPLETE_TASK' | translate}}</button>
+  <ul class="completed-task-list">
+    <li class="list-header">
+      <span>{{'FA.COMPLETED_TASKS' | translate}}</span>
+      <button (click)="sortTasks('completedTasks')" [disabled]="disableButtons">{{'FA.SORT' | translate}}</button>
+    </li>
+    <li *ngFor="let ctask of completedTasks">
+      <span class="content">{{ctask.value}}</span>
+    </li>
+  </ul>
+</div>
